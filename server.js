@@ -10,3 +10,8 @@ app.use(express.json());
 
 // Static directory to be served
 app.use(express.static("app/public"));
+
+
+app.listen(PORT, function() {
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
